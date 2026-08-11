@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] — CV</title>
+  <meta name="description" content="Personal CV / portfolio site for [Your Name].">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#top" class="logo">[Your Name]</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+        <h1>[Your Name]</h1>
+        <p class="tagline">[Your Role / Tagline — e.g. "IT Student &amp; Aspiring Software Developer"]</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="assets/cv.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          [Write a short paragraph about yourself here — your background, what you're
+          studying or working on, and what you're passionate about in IT.]
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>[Category, e.g. Languages]</h3>
+            <ul>
+              <li>[Skill 1]</li>
+              <li>[Skill 2]</li>
+              <li>[Skill 3]</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>[Category, e.g. Tools]</h3>
+            <ul>
+              <li>[Skill 1]</li>
+              <li>[Skill 2]</li>
+              <li>[Skill 3]</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>[Category, e.g. Other]</h3>
+            <ul>
+              <li>[Skill 1]</li>
+              <li>[Skill 2]</li>
+              <li>[Skill 3]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">[Month Year] — [Month Year / Present]</div>
+            <h3>[Job Title]</h3>
+            <p class="timeline-org">[Company Name]</p>
+            <p>[Short description of responsibilities and achievements.]</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">[Month Year] — [Month Year]</div>
+            <h3>[Job Title]</h3>
+            <p class="timeline-org">[Company Name]</p>
+            <p>[Short description of responsibilities and achievements.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">[Year] — [Year / Present]</div>
+            <h3>[Degree / Programme]</h3>
+            <p class="timeline-org">[School / University]</p>
+            <p>[Optional short description.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>[Project Name]</h3>
+            <p>[One or two sentences describing the project and what you used it for/learned.]</p>
+            <div class="project-links">
+              <a href="#">Code</a>
+              <a href="#">Live demo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>[Project Name]</h3>
+            <p>[One or two sentences describing the project and what you used it for/learned.]</p>
+            <div class="project-links">
+              <a href="#">Code</a>
+              <a href="#">Live demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via any of the channels below.</p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-profile</a></li>
+          <li>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Your Name]. Built with plain HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

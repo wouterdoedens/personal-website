@@ -1,0 +1,32 @@
+# Secrets & environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (future backend)
+node_modules/
+npm-debug.log*
+dist/
+build/
+
+# Python (future backend)
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
