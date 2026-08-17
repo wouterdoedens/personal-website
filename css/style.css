@@ -28,7 +28,7 @@ body {
   padding: 0 1.5rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   line-height: 1.2;
   margin-top: 0;
 }
@@ -79,6 +79,46 @@ a:hover {
   color: var(--color-text);
 }
 
+.nav-links a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.4rem 1rem;
+  white-space: nowrap;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -100,6 +140,16 @@ a:hover {
 .hero {
   padding: 5rem 0 4rem;
   text-align: center;
+}
+
+.profile-photo {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-border);
 }
 
 .hero h1 {
@@ -151,6 +201,7 @@ a:hover {
 
 .section {
   padding: 4rem 0;
+  scroll-margin-top: 4.5rem;
 }
 
 .section-alt {
@@ -160,32 +211,6 @@ a:hover {
 .section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-}
-
-/* Skills */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill-card {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: 1.25rem;
-}
-
-.skill-card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-.skill-card ul {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: var(--color-text-muted);
 }
 
 /* Timeline (experience / education) */
@@ -230,7 +255,7 @@ a:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -268,6 +293,14 @@ a:hover {
   border-top: 1px solid var(--color-border);
 }
 
+.footer-contact {
+  margin: 0 0 0.75rem;
+}
+
+.footer-contact a {
+  margin: 0 0.4rem;
+}
+
 /* Responsive nav */
 
 @media (max-width: 700px) {
@@ -290,4 +323,211 @@ a:hover {
   .nav-links.open {
     display: flex;
   }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding-left: 1rem;
+  }
+}
+
+/* Card images & tags (projects / wonders) */
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.tag-list li {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.category-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+/* Certificates */
+
+.cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cert-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.cert-card .cert-issuer {
+  color: var(--color-text-muted);
+  margin: 0.15rem 0 0.5rem;
+}
+
+.cert-card .cert-date {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* Wonders: progress summary + status list */
+
+.progress-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.progress-count {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.progress-bar {
+  display: flex;
+  flex: 1;
+  min-width: 160px;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-segment {
+  height: 100%;
+}
+
+.progress-segment-fill {
+  height: 100%;
+}
+
+.list-color-marker {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.wonder-checklist {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.wonder-checklist:last-child {
+  margin-bottom: 0;
+}
+
+.wonder-checklist h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.checklist-count {
+  margin-left: auto;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.notepad-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notepad-list li + li {
+  border-top: 1px solid var(--color-border);
+}
+
+.notepad-list a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.25rem;
+  color: var(--color-text);
+  border-radius: 4px;
+}
+
+.notepad-list a:hover {
+  background: var(--row-hover, var(--color-bg-alt));
+  text-decoration: none;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  flex-shrink: 0;
+}
+
+.status-dot.visited {
+  background: var(--color-primary);
+}
+
+.wonders-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.wonder-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  scroll-margin-top: 5rem;
+}
+
+.wonder-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wonder-location {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0.15rem 0 0.5rem;
 }

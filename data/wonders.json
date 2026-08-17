@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ancient",
+    "name": "Seven Wonders of the Ancient World",
+    "color": "#b45309",
+    "lightColor": "#fde8c8",
+    "wonders": [
+      { "name": "Great Pyramid of Giza", "country": "Egypt", "location": "Giza", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true },
+      { "name": "Hanging Gardens of Babylon", "country": "Iraq", "location": "Babylon", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Temple of Artemis", "country": "Turkey", "location": "Ephesus", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Statue of Zeus at Olympia", "country": "Greece", "location": "Olympia", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Mausoleum at Halicarnassus", "country": "Turkey", "location": "Bodrum", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Colossus of Rhodes", "country": "Greece", "location": "Rhodes", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Lighthouse of Alexandria", "country": "Egypt", "location": "Alexandria", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false }
+    ]
+  },
+  {
+    "id": "new7",
+    "name": "New 7 Wonders of the World",
+    "color": "#2563eb",
+    "lightColor": "#dbeafe",
+    "wonders": [
+      { "name": "Great Wall of China", "country": "China", "location": "near Beijing", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Petra", "country": "Jordan", "location": "Ma'an", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Christ the Redeemer", "country": "Brazil", "location": "Rio de Janeiro", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Machu Picchu", "country": "Peru", "location": "Cusco Region", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true },
+      { "name": "Chichen Itza", "country": "Mexico", "location": "Yucatan", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true },
+      { "name": "Colosseum", "country": "Italy", "location": "Rome", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Taj Mahal", "country": "India", "location": "Agra", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false }
+    ]
+  },
+  {
+    "id": "natural7",
+    "name": "Seven Natural Wonders of the World",
+    "color": "#059669",
+    "lightColor": "#d1fae5",
+    "wonders": [
+      { "name": "Grand Canyon", "country": "USA", "location": "Arizona", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true },
+      { "name": "Great Barrier Reef", "country": "Australia", "location": "Queensland", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Harbor of Rio de Janeiro", "country": "Brazil", "location": "Rio de Janeiro", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Mount Everest", "country": "Nepal / China", "location": "Himalayas", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Aurora Borealis", "country": "Norway", "location": "Tromsø", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true },
+      { "name": "Parícutin", "country": "Mexico", "location": "Michoacán", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Victoria Falls", "country": "Zambia / Zimbabwe", "location": "Zambezi River", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false }
+    ]
+  },
+  {
+    "id": "newnature",
+    "name": "New 7 Wonders of Nature",
+    "color": "#7c3aed",
+    "lightColor": "#ede9fe",
+    "wonders": [
+      { "name": "Amazon Rainforest", "country": "South America", "location": "Amazon Basin", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Halong Bay", "country": "Vietnam", "location": "Quang Ninh", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Iguazu Falls", "country": "Argentina / Brazil", "location": "Iguazu River", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Jeju Island", "country": "South Korea", "location": "Jeju", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Komodo Island", "country": "Indonesia", "location": "Lesser Sunda Islands", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Puerto Princesa Underground River", "country": "Philippines", "location": "Palawan", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": false },
+      { "name": "Table Mountain", "country": "South Africa", "location": "Cape Town", "images": ["assets/wonders/placeholder.jpg"], "intro": "[Short intro — when you went, or why it's on your list.]", "visited": true }
+    ]
+  }
+]

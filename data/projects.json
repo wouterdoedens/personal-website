@@ -1,0 +1,18 @@
+[
+  {
+    "title": "[Project Name]",
+    "description": "[One or two sentences describing the project and what you used it for/learned.]",
+    "image": "assets/projects/placeholder.jpg",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "category": "personal",
+    "githubUrl": "https://github.com/your-username/project-repo"
+  },
+  {
+    "title": "[Project Name]",
+    "description": "[One or two sentences describing the project and what you used it for/learned.]",
+    "image": "assets/projects/placeholder.jpg",
+    "tags": ["Python"],
+    "category": "family-friends",
+    "githubUrl": "https://github.com/your-username/project-repo"
+  }
+]

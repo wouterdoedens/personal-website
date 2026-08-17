@@ -1,0 +1,16 @@
+[
+  {
+    "name": "[Certificate Name]",
+    "issuer": "[Issuing Organization]",
+    "date": "2025-01",
+    "credentialUrl": "https://example.com/credential/123",
+    "category": "computer"
+  },
+  {
+    "name": "[Certificate Name]",
+    "issuer": "[Issuing Organization]",
+    "date": "2024-06",
+    "credentialUrl": "https://example.com/credential/456",
+    "category": "other"
+  }
+]

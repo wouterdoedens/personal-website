@@ -1,0 +1,17 @@
+[
+  {
+    "id": "languages",
+    "heading": "Languages",
+    "skills": ["[Native language]", "[Fluent language]", "[Additional language]"]
+  },
+  {
+    "id": "computer",
+    "heading": "Computer Skills",
+    "skills": ["HTML", "CSS", "JavaScript", "Git", "VS Code"]
+  },
+  {
+    "id": "other",
+    "heading": "Other",
+    "skills": ["[Skill 1]", "[Skill 2]"]
+  }
+]
